@@ -61,8 +61,11 @@ def stream_markup_timer(_, videoid, chat_id, played, dur):
         ],
         [
             InlineKeyboardButton(
-                text="✯ ᴄʟᴏsᴇ ✯", callback_data=f"close"
+                text=" ᴄʟᴏsᴇ ", callback_data=f"close"
             )
+        ],
+        [
+            InlineKeyboardButton("sᴜᴘᴘᴏʀᴛ", url="https://t.me/Resso_support")
         ],
     ]
     return buttons
@@ -118,8 +121,11 @@ def telegram_markup_timer(_, chat_id, played, dur):
         ],
         [
             InlineKeyboardButton(
-                text="✯ ᴄʟᴏsᴇ ✯", callback_data=f"close"
+                text=" ᴄʟᴏsᴇ ", callback_data=f"close"
             )
+        ],
+        [
+            InlineKeyboardButton("sᴜᴘᴘᴏʀᴛ", url="https://t.me/Resso_support")
         ],
     ]
     return buttons
@@ -147,8 +153,11 @@ def stream_markup(_, videoid, chat_id):
         ],
         [
             InlineKeyboardButton(
-                text="✯ ᴄʟᴏsᴇ ✯", callback_data=f"close"
+                text=" ᴄʟᴏsᴇ ", callback_data=f"close"
             )
+        ],
+        [
+            InlineKeyboardButton("sᴜᴘᴘᴏʀᴛ", url="https://t.me/Resso_support")
         ],
     ]
     return buttons
@@ -173,8 +182,11 @@ def telegram_markup(_, chat_id):
         ],
         [
             InlineKeyboardButton(
-                text="✯ ᴄʟᴏsᴇ ✯", callback_data=f"close"
+                text=" ᴄʟᴏsᴇ ", callback_data=f"close"
             )
+        ],
+        [
+            InlineKeyboardButton("sᴜᴘᴘᴏʀᴛ", url="https://t.me/Resso_support")
         ],
     ]
     return buttons
@@ -200,6 +212,9 @@ def track_markup(_, videoid, user_id, channel, fplay):
                 text=_["CLOSE_BUTTON"],
                 callback_data=f"forceclose {videoid}|{user_id}",
             )
+        ],
+        [
+            InlineKeyboardButton("sᴜᴘᴘᴏʀᴛ", url="https://t.me/Resso_support")
         ],
     ]
     return buttons
@@ -297,7 +312,7 @@ close_keyboard = InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        text="✯ ᴄʟᴏsᴇ ✯", callback_data="close"
+                        text=" ᴄʟᴏsᴇ ", callback_data="close"
                     )
                 ]    
             ]
@@ -328,7 +343,7 @@ def queue_markup(_, videoid, chat_id):
         ],
         [
             InlineKeyboardButton(
-                text="✯ ᴄʟᴏsᴇ ✯", callback_data=f"close"
+                text=" ᴄʟᴏsᴇ ", callback_data=f"close"
             )
         ],
     ]
