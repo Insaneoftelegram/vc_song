@@ -2,8 +2,6 @@ from AM.core.bot import AnonXBot
 from AM.core.dir import dirr
 from AM.core.git import git
 from AM.core.userbot import Userbot
-from AM.misc import dbb, heroku
-
 from .logging import LOGGER
 
 
